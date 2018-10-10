@@ -1,0 +1,276 @@
+/* The side navigation menu */
+body{
+    padding:0;
+    margin: 0;
+}
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background: #f1f1f1;/* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.25s;
+    border-right: 1px solid gray; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 20px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    border-bottom: 1px solid rgb(60,60,60);
+    border-top: 1px solid rgb(60,60,60);
+    z-index:1;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    background-color: rgba(50,90,255);
+    color: white;
+
+}
+.sidenav a.closebtn:hover{
+    background-color: transparent;
+    color: black;
+}
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+.mobile{
+    display: none;
+    text-align: center;
+
+}
+.mobile a{
+    padding-left: 8px;
+}
+.btn-custom{
+    margin: 0 auto;
+    padding:5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: monospace;
+    color: black;
+    border: 1px solid black;
+}
+.btn-custom:hover{
+    color: white;
+    background-color: black;
+}
+#profile{
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    border: 3px dotted white;
+    text-align: center;
+    z-index: 2;
+    box-shadow: 0 0 20px 5px dodgerblue;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#profile:hover{
+    background-color: none;
+    box-shadow: 0 0 20px 10px gold;
+}
+#profileA{
+    border: none;
+}
+#profileA:hover{
+    background:none;
+}
+.mobileNav{
+    text-align:center;
+}
+.mobileNav div{
+    margin-left: auto;
+}
+
+
+.navbar-custom{
+    color: black;
+    padding: 0;
+    animation-name: navbarColor;
+    animation-iteration-count: infinite;   
+    animation-duration: 5s;
+    animation-timing-function: linear;
+
+}
+.navbar-custom .navbar-brand{
+    padding-left: 20px;
+    font-family: 'Sofia';
+    font-size: 2.2rem;
+    font-weight: bold;
+    animation-name: colors;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+.navbar-custom a{
+    color: black;
+    font-size: 1.3rem;
+    font-family: calibri;
+}
+.navbar-nav{
+    margin-left: auto;
+}
+.nav-link-custom{
+    padding: 7px;
+    padding-right:8px;
+    padding-left: 8px;
+    transition: 0.4s;
+}
+
+.nav-link-custom:hover{
+    background-color: rgba(255,255,255,0.5);
+}
+
+
+#menu{
+    display:inline-block; 
+    text-align: right; 
+    margin-right: 15px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.closebtn:hover{
+    background-color: transparent;
+}
+.menubar{
+    text-align: center;
+}
+.menubar .first{
+    border-top: 2px solid rgb(60,60,60);
+}
+.menubar .last{
+    border-bottom: 2px solid rgb(60,60,60);
+}
+.jumbotron{
+    background: transparent;
+}
+.myphoto{
+    background-image: url("myphoto.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+}
+ul{
+    color:rgb(130,130,130);
+}
+.tick{
+    list-style: none;
+    padding-left: 0;
+    color:rgb(130,130,130)
+}
+.tick li:before{
+    content: '✓ '; 
+    color: rgb(40,230,80);
+
+}
+
+
+
+#contact{
+    background-color: rgba(0,0,0,0.03);
+}
+#contact input[type="text"],#contact input[type="email"], textarea{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: none;
+    border-left: 2px solid gray;
+    border-top: 2px solid gray;
+    padding: 5px;
+}
+body{
+    background: url("https://png.pngtree.com/thumb_back/fw800/back_pic/04/14/75/49582074207339b.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@keyframes colors{
+    0%{
+        color: rgb(150,50,50);
+        text-shadow: 0px 0px 3px rgb(230,50,50);
+    }
+    33%{
+        color: green;
+        text-shadow: 0px 0px 3px green;
+    }
+
+    66%{
+        color: blue;
+        text-shadow: 0px 0px 3px blue;
+    }
+    100%{
+        color: rgb(150,50,50);
+        text-shadow: 0px 0px 3px rgb(230,50,50);
+    }
+}
+@keyframes navbarColor{
+    0%{
+        background-color: rgba(255,50,50,0.4);
+    }
+    33%{
+        background-color: rgba(50,255,50,0.4);
+    }
+
+    66%{
+        background-color: rgba(80,80,255,0.3);
+    }
+    100%{
+        background-color: rgba(255,50,50,0.4);
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+@media (max-width: 768px){
+    .mobile{ display: block; }
+    .navbar-brand{
+    font-family: 'Sofia';
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+    animation-name: colors;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+
+    }
+    .navbar-expand-sm{
+        display:none;
+    }
+    .height{
+        height: 400px;
+    }
+    
+}
