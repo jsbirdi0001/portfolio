@@ -274,3 +274,19 @@ body{
     }
     
 }
+
+#load{
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:9999;
+    background:url("load.gif") no-repeat center center rgba(0,0,0,0.25)
+}
+
+#card{
+    box-shadow: 1px 1px 10px gray;
+    transition: 0.3s;
+}
+#card:hover{
+    box-shadow: 1px 1px 5px gray;
+}
